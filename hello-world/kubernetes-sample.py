@@ -35,7 +35,7 @@ passing = KubernetesPodOperator(namespace='airflow',
 
 failing = KubernetesPodOperator(namespace='airflow',
                           in_cluster=True,
-                          image="ubuntu:1604",
+                          image="ubuntu:latest",
                           cmds=["python","-c"],
                           arguments=["print('hello world')"],
                           labels={"foo": "bar"},
