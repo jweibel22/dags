@@ -1,1 +1,3 @@
 kubernetes==9.0.0
+apache-airflow[crypto]
+boto3
